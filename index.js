@@ -1,16 +1,16 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
-const fs = require('fs');
+// const fs = require('fs');
 
-const privateKey = fs.readFileSync('./private.key');
-const certificate = fs.readFileSync('./certificate.crt');
+// const privateKey = fs.readFileSync('./private.key');
+// const certificate = fs.readFileSync('./certificate.crt');
 
-const credentials = {key: privateKey, cert: certificate};
+// const credentials = {key: privateKey, cert: certificate};
 
-const app = express(credentials);
+// const app = express(credentials);
 
-// const app = express()
+const app = express()
 app.use(cors())
 
 let store = []
